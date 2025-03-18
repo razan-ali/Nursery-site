@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Qurrah Day Care">
+                </div>
+            
+                <div class="nav-controls">
+                    <a class="account" href="sign_in_selection.html">تسجيل الدخول</a>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="auth-container">
+            <div class="auth-box">
+                <h2>تسجيل الدخول</h2>
+                <p>من فضلك اختر دورك</p>
+              
+                <form id="roleForm" action="sign_in_redirect.php" method="POST">
+                    <button type="submit" name="role" value="parent" class="auth-btn">تسجيل الدخول كـ ولي أمر</button>
+                    <button type="submit" name="role" value="caregiver" class="auth-btn">تسجيل الدخول كـ حاضنة</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo-text.png" alt="خطوات صغيرة">
+            </div>
+            <div class="footer-section services">
+                <h3>خدماتنا</h3>
+                <ul>
+                    <li><a href="#">خطوات صغيرة في بيئات العمل</a></li>
+                    <li><a href="#">حضانات خطوات صغيرة</a></li>
+                    <li><a href="#">حدائق خطوات صغيرة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section resources">
+                <h3>المصادر</h3>
+                <ul>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                    <li><a href="#">المدونة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>تواصل معنا</h3>
+                <p>info@little_steps.com.sa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+-=--=-=-----0-00--00--0-00-0--00-0-0--00--00-
+
+-- Create parents table
+CREATE TABLE parents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phone_1 VARCHAR(15),
+    phone_2 VARCHAR(15)
+);
+
+-- Create caregivers table
+CREATE TABLE caregivers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,  
+    phone VARCHAR(50),
+    address TEXT
+);
+
+-- Create available_times table
+CREATE TABLE available_times (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    caregiver_id INT,
+    date DATE NOT NULL,  -- Available date
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    available BOOLEAN NOT NULL DEFAULT TRUE,
+    FOREIGN KEY (caregiver_id) REFERENCES caregivers(id)
+);
+
+-- Create reservations table with foreign key to available_times
+CREATE TABLE reservations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    parent_id INT,
+    caregiver_id INT,
+    available_time_id INT, -- Foreign key reference to available_times table
+    duration INT NOT NULL,  -- Duration in minutes
+    FOREIGN KEY (parent_id) REFERENCES parents(id),
+    FOREIGN KEY (caregiver_id) REFERENCES caregivers(id),
+    FOREIGN KEY (available_time_id) REFERENCES available_times(id)
+);
+
+-- Insert data into parents table
+INSERT INTO parents (name, email, password, phone_1, phone_2) VALUES
+('جود محمد الغامدي', 'jood@gmail.com', 'password123', '0501234567', '0507654321'),
+('سلمان العتيبي', 'salman@gmail.com', 'password456', '0559876543', '0501239876');
+
+-- Insert data into caregivers table
+INSERT INTO caregivers (name, email, phone, address, password) VALUES
+('فاطمة الشمري', 'fatima@gmail.com', '0535554444', 'الرياض، شارع الملك عبد الله', 'password123'),
+('أسماء الزهراني', 'asmaa@gmail.com', '0506543210', 'جدة، شارع التحلية', 'password123');
+
+-- Insert available times for caregivers
+INSERT INTO available_times (caregiver_id, date, start_time, end_time, available) VALUES
+(1, '2025-03-13', '08:00:00', '09:00:00', TRUE),
+(1, '2025-03-13', '09:00:00', '10:00:00', TRUE),
+(2, '2025-03-13', '10:00:00', '11:00:00', TRUE),
+(2, '2025-03-13', '11:00:00', '12:00:00', TRUE);
+
+-- Insert reservations into reservations table by referencing available_times
+INSERT INTO reservations (parent_id, caregiver_id, available_time_id, duration) VALUES
+(1, 1, 1, 60),  -- Reservation for caregiver 1, available time slot 1
+(2, 2, 3, 60);  -- Reservation for caregiver 2, available time slot 3

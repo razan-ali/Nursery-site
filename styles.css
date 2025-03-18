@@ -1,0 +1,700 @@
+/* تنسيق شريط التنقل */
+nav {
+    background: #6a86c7;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-switch, .account {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    background: linear-gradient(to bottom, #6a86c7, #ffffff);
+    color: white;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.background-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* ضبط النص في المنتصف */
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ضبط الصور */
+.left-image{
+    width: 500px;
+    height: auto;
+    
+
+}
+
+
+.right-image {
+    width: 500px;
+    height: auto;
+
+ 
+}
+
+.certifications img {
+    width: 120px;
+    margin: 10px;
+
+
+}
+
+
+
+
+.vision-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.vision, .values {
+    max-width: 600px;
+}
+
+.vision img, .values img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+.section-title {
+    font-size: 24px;
+    color: #6a86c7;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.vision p, .values p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* تنسيق الفوتر */
+footer {
+    background: #8064A2;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* أقسام الفوتر */
+.footer-section {
+    text-align: right;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+/* تنسيق الأيقونات */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+/* شعار الفوتر */
+.footer-logo img {
+    width: 200px;
+}
+
+/* الجزء السفلي للفوتر */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* تنسيق نموذج تسجيل الدخول والتسجيل */
+.auth-section, .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    color: #333;
+    width: 350px;
+}
+
+.auth-box h2 {
+    color: #6a86c7;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth-box label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-btn {
+    background: #6a86c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #5a76b2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #5a72b5, #d9e3f0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 90px; /* Adjust according to header height */
+}
+
+header {
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+
+.booking {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 300px;
+
+}
+
+select, button {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#available-times {
+    margin-top: 20px;
+}
+
+.time-slot {
+    display: block;
+    background: #ddd;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-slot:hover, .time-slot.selected {
+    background: #007bff;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#book-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#book-button:hover {
+    background: #218838;
+}
+
+footer {
+    background: #644b88;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.choose{
+    color: rgb(0, 0, 0); /* Corrected property */
+
+}
+
+.dashboard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 60pt;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 50px;
+    color : black;
+    margin-bottom: 200pt;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.day {
+    background: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 100px;
+    position: relative;
+}
+
+.day h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.slot {
+    background: #5a72b5;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+}
+
+
+.day {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.slot {
+    margin: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.reserved {
+    background-color: #6a86c7;
+    color: white;
+}
+.day h3 {
+    margin-bottom: 10px;
+}
+
+.day-slot {
+    margin: 5px;
+    padding: 5px;
+    background-color: #6a86c7;  /* Default color for available days */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.time-slot {
+    margin: 5px;
+    padding: 5px;
+    background-color: #6a86c7;  /* Default color for available slots */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #4a64b3; /* Darker blue for selected slot */
+}
+
+.time-slot.unavailable {
+    background-color: #333;  /* Dark color for unavailable slots */
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style for available day buttons */
+.day-slot {
+    margin: 5px;
+    padding: 10px;
+    background-color: #6a86c7;  /* Default color for available days */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for available time buttons */
+.time-slot {
+    margin: 5px;
+    padding: 10px;
+    background-color: #6a86c7;  /* Default color for available slots */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for selected time slot */
+.time-slot.selected {
+    background-color: #4a64b3; /* Darker blue for selected slot */
+}
+
+/* Style for booked time slots */
+.time-slot.booked {
+    background-color: #333;  /* Dark color for unavailable slots */
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+.hidden {
+    display: none;
+}
+
+section.booking .available-times h2 {
+    color: black !important;
+}
+
+section.booking .available-days h2 {
+    color: black !important;
+}
+
+.selected {
+    background-color: #ff9900 !important; /* Highlight color */
+    color: white;
+}
+/* Styling for Date Selection Buttons */
+/* Styling for Date Selection Buttons */
+.day-slot {
+    background-color: #ffcc00; /* Yellow background */
+    color: black; /* Black text */
+    border: 2px solid #ffa500; /* Orange border */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.day-slot:hover {
+    background-color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Styling for Time Selection Buttons */
+.time-slot {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: 2px solid #2E8B57; /* Darker green border */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-slot:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Selected Date and Time Buttons */
+.day-slot.selected, .time-slot.selected {
+    background-color: #ff3333 !important; /* Red for selected choice */
+    color: white !important;
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #6a86c7;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #4a64b3;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Unique Styling for Reservations Table */
+.reservations-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservations-table th, 
+.reservations-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.reservations-table th {
+    background: #6a0dad;
+    color: white;
+    font-size: 16px;
+}
+
+.reservations-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.reservations-table tr:hover {
+    background: #f1f1f1;
+}
+
+.cancel-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #c9302c;
+}
+
+.no-reservations {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
